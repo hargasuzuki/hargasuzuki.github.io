@@ -1,4 +1,549 @@
 <html>
-  <head></head>
-  <body>Harga Suzuki BSD</body>
+  <head>
+  <style>
+    @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.hidden {
+  display: none;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  padding: 10px 40px;
+  background: #fff;
+  box-shadow: 1px -5px 15px black;
+  h3 {
+      float: left;
+      margin-top: 5px;
+      margin-left: 5px;
+      font-weight: bold;
+   }
+  .brand {
+    float: left;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #424242;
+    margin-top: -8px;
+    .inner {
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+      background: #eee;
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+    .hub-cap {
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
+      background: gray;
+      position: relative;
+      top: 8px;
+      left: 8px;
+      
+    }
+  }
+}
+#content {
+  padding: 70px 0;
+}
+#content .col-md-3 {
+  min-height: 700px;
+  background: #F5F5F5;
+  
+  .refinements {
+    .refinement {
+      h4 {
+        padding: 10px 15px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        cursor: pointer;
+      }
+      .refinement-options {
+        list-style-type: none;
+        padding-left: 15px;
+        
+        li {
+          padding: 5px 0;
+          .psuedo-check {
+            display: block;
+            height: 20px;
+            width: 20px;
+            float: left;
+            margin-right: 8px;
+            border: 1px solid rgba(0,0,0,0.09);
+            background: #fff;
+            &.selected {
+              background: #507DBC;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#content .col-md-9 {
+  .car-display {
+    p {
+      margin-top: -30px;
+    }
+  }
+  .well {
+    float: left;
+    min-height: 400px;
+    width: 390px;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    margin-right: 20px;
+    background: #212121;
+    transform: all 1s ease-in;
+    .image-container {
+      float: left;
+      margin-right: 10px;
+      
+    }
+    img {
+      height: 260px;
+      width: 390px;
+    }
+    h3 {
+      margin-top: 15px;
+      display: inline;
+      padding: 10px;
+      position: relative;
+      top: 15px;
+      color: white;
+    }
+  }
+  
+}
+
+    </style>
+  </head>
+  <body><header>
+  <div class="container">
+    <!--
+    <div class="brand">
+      <div class="inner">
+         <div class="hub-cap">
+        </div>
+      </div>
+    </div>
+    -->
+    <h3>React dealer</h3>
+  </div>
+</header>
+<div class="car-content-top">
+</div>
+<div class="car-content-main">
+  <div class="container">
+    <div id="content">
+
+    </div>  
+  </div>
+</div>
+    
+    
+    </body>
+<script>
+  // known bugs:
+// - selecting two separate model refinements for the same make.
+var carData = {
+  data: [
+    {
+      make: "Porsche",
+      model: "911",
+      price: 135000,
+      wiki: "http://en.wikipedia.org/wiki/Porsche_997",
+      img:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnuYVDLA0hr3qzoMEMsk5bkGQvzNFs0z06F5j5XbCibohp3CYu7g"
+    },
+    {
+      make: "Tesla",
+      model: "Model S",
+      price: 100000,
+      wiki: "http://en.wikipedia.org/wiki/Porsche_997",
+      img:
+        "http://media.caranddriver.com/images/14q4/638369/2015-tesla-model-s-p85d-first-drive-review-car-and-driver-photo-648964-s-450x274.jpg"
+    },
+    {
+      make: "Tesla",
+      model: "Model X",
+      price: 120000,
+      wiki: "http://en.wikipedia.org/wiki/Porsche_997",
+      img:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrqgYzyFlYmq_4-MJr_5Hy_-LenNHufzMIHuJio88EMDEYlN_7g"
+    },
+    {
+      make: "Porsche",
+      model: "Cayenne Turbo",
+      price: 11000,
+      wiki: "http://en.wikipedia.org/wiki/Porsche_997",
+      img:
+        "http://files3.porsche.com/filestore/galleryimagerwd/multimedia/none/rd-2013-9pa-e2-2nd-tu-gallery-exterior-06/preview/6e14937f-010f-11e4-84a6-001a64c55f5c/porsche-cayenne-image.jpg"
+    },
+    {
+      make: "Nissan",
+      model: "GT-R",
+      price: 80000,
+      wiki: "http://en.wikipedia.org/wiki/Nissan_Gt-r",
+      img:
+        "http://media.caranddriver.com/images/14q4/638369/2015-tesla-model-s-p85d-first-drive-review-car-and-driver-photo-648964-s-450x274.jpg"
+    },
+    {
+      make: "BMW",
+      model: "M3",
+      price: 60500,
+      wiki: "http://en.wikipedia.org/wiki/Bmw_m3",
+      img:
+        "http://media.caranddriver.com/images/media/331369/m-is-for-mega-2015-bmw-m3-pricing-surfaces-photo-583888-s-450x274.jpg"
+    },
+    {
+      make: "Audi",
+      model: "S5",
+      price: 53000,
+      wiki: "http://en.wikipedia.org/wiki/Audi_S5#Audi_S5",
+      img:
+        "http://www.blogcdn.com/www.autoblog.com/media/2012/11/001-2013-audi-s5-coupe.jpg"
+    },
+    {
+      make: "Audi",
+      model: "TT",
+      price: 40000,
+      wiki: "http://en.wikipedia.org/wiki/Audi_TT",
+      img:
+        "http://www.topgear.com/sites/default/files/styles/16x9_640w/public/cars-road-test/image/2015/01/Large%20Image%20(optional)_417.jpg?itok=9L-AJyrg"
+    }
+  ]
+};
+
+var helpers = {
+  getRefinementList: function () {
+    var list = [
+      {
+        makes: []
+      },
+      {
+        models: []
+      }
+    ];
+    carData.data.forEach(function (val) {
+      if (list[0].makes.indexOf(val.make) < 0) {
+        list[0].makes.push(val.make);
+      }
+      if (list[1].models.indexOf(val.model) < 0) {
+        list[1].models.push(val.model);
+      }
+    });
+
+    return list;
+  },
+  getModels: function (makes, selectedModels) {
+    var models = [];
+    carData.data.forEach(function (val) {
+      makes.forEach(function (make) {
+        if (val.make == make) {
+          models.push(val);
+        }
+      });
+    });
+
+    return models;
+  },
+  refineMakes: function (ref, data) {
+    var refinedList = [];
+    ref.selectedRefinements.forEach(function (val) {
+      data.forEach(function (item) {
+        if (val == item.make) {
+          refinedList.push(item);
+        }
+      });
+    });
+    return refinedList;
+  },
+  refineModels: function (ref, data) {
+    var refinedList = [];
+    ref.selectedRefinements.forEach(function (val, index) {
+      val = val.split(":"); // val is now an array [make:model]
+      refinedList = data.filter(function (item) {
+        return val[1] == item.model || val[0] !== item.make;
+      });
+      data = refinedList;
+    });
+
+    return refinedList;
+  }
+};
+var CarWell = React.createClass({
+  render: function () {
+    return (
+      <div className="car-display">
+        <p>Showing: {this.props.cars.length} cars total</p>
+        {this.props.cars.map(function (car) {
+          return (
+            <div key={car.id} className="well">
+              <div className="image-container">
+                <img src={car.img} />
+              </div>
+              <h3>{[car.make, car.model].join(" ")}</h3>
+              <span>${car.price}</span>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+});
+var SidebarItem = React.createClass({
+  getInitialState: function () {
+    return {
+      selected: false
+    };
+  },
+  toggleSelected: function (e) {
+    e.preventDefault();
+    // this.props.toggleAndFilter(this.props.refinement, "make", this.props.cars);
+    var refinementObj = this.props.refinementObj;
+    var refinement = this.props.refinement;
+    var toggleAndFilter = this.props.toggleAndFilter;
+    var refinementType = this.props.refinementType;
+    var self = this;
+    this.setState({ selected: !this.state.selected });
+    if (!this.state.selected) {
+      // when selected push refinement into relevant array of refinementObj
+      refinementObj.forEach(function (val) {
+        if (val.rtype == "make" && refinementType == "make") {
+          val.selectedRefinements.push(refinement);
+        }
+        if (val.rtype == "model" && refinementType == "model") {
+          // make:model
+          var refStr = [self.props.make, refinement].join(":");
+          console.log(refStr);
+          val.selectedRefinements.push(refStr);
+        }
+        toggleAndFilter();
+      });
+    } else {
+      console.log("was unselected");
+      // if refinement is unselected, then remove refinement from relevant array of refinementObj
+      refinementObj.forEach(function (val) {
+        if (val.rtype == "make" && refinementType == "make") {
+          var index = val.selectedRefinements.indexOf(refinement);
+          val.selectedRefinements.splice(index, 1);
+          // self.props.selectedMakes = val.selectedRefinements;
+        }
+        if (val.rtype == "model" && refinementType == "model") {
+          // make:model
+          var refStr = [self.props.make, refinement].join(":");
+          var index = val.selectedRefinements.indexOf(refStr);
+          val.selectedRefinements.splice(index, 1);
+        }
+        toggleAndFilter(true);
+      });
+    }
+  },
+  render: function () {
+    return (
+      <div className="refinement">
+        <span
+          onClick={this.toggleSelected}
+          className={(this.state.selected ? "selected" : "") + " psuedo-check"}
+        ></span>
+        <p>{this.props.refinement}</p>
+      </div>
+    );
+  }
+});
+var Models = React.createClass({
+  getInitialState: function () {
+    return {
+      showRef: true
+    };
+  },
+  showRef: function (e) {
+    e.preventDefault();
+    this.setState({ showRef: !this.state.showRef });
+  },
+  render: function () {
+    var self = this;
+    var models = helpers.getModels(
+      this.props.refinementObj[0].selectedRefinements,
+      this.props.refinementObj[1].selectedRefinements
+    );
+    return (
+      <div className={models.length > 0 ? "refinements" : "hidden"}>
+        <div className="refinement">
+          <h4 onClick={self.showRef} className="refinement-title">
+            Models
+          </h4>
+          <ul className={self.state.showRef ? "refinement-options" : "hidden"}>
+            {models.map(function (car) {
+              return (
+                <li key={car.id}>
+                  <SidebarItem
+                    refinementType={"model"}
+                    refinement={car.model}
+                    make={car.make}
+                    toggleAndFilter={self.props.toggleAndFilter}
+                    refinementObj={self.props.refinementObj}
+                    selectedMakes={self.props.selectedMakes}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    );
+  }
+});
+var Makes = React.createClass({
+  getInitialState: function () {
+    return {
+      showRef: true
+    };
+  },
+  showRef: function (e) {
+    e.preventDefault();
+    this.setState({ showRef: !this.state.showRef });
+  },
+  // this.props.showRef
+  render: function () {
+    var vals = [];
+    var self = this;
+    return (
+      <div className="refinements">
+        <div className="refinement">
+          <h4 onClick={self.showRef} className="refinement-title">
+            Makes
+          </h4>
+          <ul className={self.state.showRef ? "refinement-options" : "hidden"}>
+            {carData.data.map(function (car) {
+              if (vals.indexOf(car.make) < 0) {
+                vals.push(car.make);
+                return (
+                  <li key={car.id}>
+                    <SidebarItem
+                      refinementType={"make"}
+                      refinement={car.make}
+                      toggleAndFilter={self.props.toggleAndFilter}
+                      refinementObj={self.props.refinementObj}
+                      selectedMakes={self.props.selectedMakes}
+                    />
+                  </li>
+                );
+              }
+            })}
+          </ul>
+        </div>
+      </div>
+    );
+  }
+});
+var Sidebar = React.createClass({
+  getInitialState: function () {
+    return {
+      selectedMakes: []
+    };
+  },
+  render: function () {
+    var toggleAndFilter = this.props.toggleAndFilter;
+    var cars = this.props.cars;
+    var refinementObj = this.props.refinementObj;
+    var vals = [];
+    // var renderSidebarItem = this.renderSidebarItem;
+    var showRef = this.showRef;
+    var self = this;
+    return (
+      <div className="refs">
+        <Makes
+          refinementObj={this.props.refinementObj}
+          toggleAndFilter={this.props.toggleAndFilter}
+        />
+        <Models
+          refinementObj={this.props.refinementObj}
+          toggleAndFilter={this.props.toggleAndFilter}
+        />
+      </div>
+    );
+  }
+});
+
+var App = React.createClass({
+  getInitialState: function () {
+    var id = 0;
+    carData.data.forEach(function (car) {
+      car.id = id++;
+    });
+    return {
+      cars: carData.data,
+      refinementObj: [
+        {
+          rtype: "make",
+          selectedRefinements: []
+        },
+        {
+          rtype: "model",
+          selectedRefinements: []
+        }
+      ]
+    };
+  },
+
+  toggleAndFilter: function (reset) {
+    //console.log("should be toggling and filtering");
+    // refines car state based off refinements
+    var refinementObj = this.state.refinementObj;
+    //console.log(JSON.stringify(refinementObj));
+    // var dataClone = carData.data;
+    var dataClone = carData.data;
+
+    refinementObj.forEach(function (refItem) {
+      var hasRefinements = refItem.selectedRefinements.length > 0;
+      if (refItem.rtype == "make" && hasRefinements) {
+        dataClone = helpers.refineMakes(refItem, dataClone);
+      }
+      if (refItem.rtype == "model" && hasRefinements) {
+        //console.log("getting in here?");
+        //console.log("data clone before", JSON.stringify(dataClone));
+        dataClone = helpers.refineModels(refItem, dataClone);
+        //console.log("data clone after", JSON.stringify(dataClone));
+      }
+    });
+
+    this.setState({
+      cars: dataClone
+    });
+  },
+  render: function () {
+    return (
+      <div className="row">
+        <div className="col-md-3">
+          <Sidebar
+            cars={this.state.cars}
+            toggleAndFilter={this.toggleAndFilter}
+            refinementObj={this.state.refinementObj}
+          />
+        </div>
+        <div className="col-md-9">
+          <CarWell cars={this.state.cars} />
+        </div>
+      </div>
+    );
+  }
+});
+
+ReactDOM.render(<App />, document.getElementById("content"));
+
+  </script>
 </html>  
