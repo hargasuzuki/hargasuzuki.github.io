@@ -1,0 +1,2220 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-language" content="en-US" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="revisit-after" content="7 days" />
+		<meta http-equiv="Expires" content="0" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Copyright" content="Suzuki Jabodetabek" />
+										<meta property="og:image" content="" />
+		    					
+		<title>  Simulasi Kredit</title>
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		
+			    <link rel="shortcut icon" href="https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/Favicon-Suzuki.png" type="image/x-icon" />
+				
+		<link id="style" href="https://www.suzukijabodetabek.id/wp-content/themes/dealer/style.css" type="text/css" rel="stylesheet" />
+		<link id="awesome" href="https://www.suzukijabodetabek.id/wp-content/themes/dealer/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+		<link id="owlcarousel" href="https://www.suzukijabodetabek.id/wp-content/themes/dealer/css/owl.carousel.min.css" type="text/css" rel="stylesheet" />
+		<link id="owlanimation" href="https://www.suzukijabodetabek.id/wp-content/themes/dealer/css/owl.animate.css" type="text/css" rel="stylesheet" />
+		<link id="owltheme" href="https://www.suzukijabodetabek.id/wp-content/themes/dealer/css/owl.theme.default.min.css" type="text/css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="https://www.suzukijabodetabek.id/wp-content/themes/dealer/js/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.suzukijabodetabek.id/wp-content/themes/dealer/js/accordion.js"></script>
+		
+		<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Suzuki Jabodetabek &raquo; Feed" href="https://www.suzukijabodetabek.id/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Suzuki Jabodetabek &raquo; Comments Feed" href="https://www.suzukijabodetabek.id/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.suzukijabodetabek.id\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.suzukijabodetabek.id/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.suzukijabodetabek.id/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='bonfire-touchy-css-css'  href='https://www.suzukijabodetabek.id/wp-content/plugins/touchy-by-bonfire/touchy.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='touchy-fontawesome-css'  href='https://www.suzukijabodetabek.id/wp-content/plugins/touchy-by-bonfire/fonts/font-awesome/css/font-awesome.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='touchy-fonts-css'  href='//fonts.googleapis.com/css?family=Roboto%3A400&#038;ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='animation-css'  href='https://www.suzukijabodetabek.id/wp-content/themes/dealer/css/animation.css?ver=5.8.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-content/themes/dealer/js/jquery.slide.js?ver=20170529' id='cycle-js'></script>
+<link rel="https://api.w.org/" href="https://www.suzukijabodetabek.id/wp-json/" /><link rel="alternate" type="application/json" href="https://www.suzukijabodetabek.id/wp-json/wp/v2/pages/383" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.suzukijabodetabek.id/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.suzukijabodetabek.id/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.1" />
+<link rel="canonical" href="https://www.suzukijabodetabek.id/simulasi-kredit/" />
+<link rel='shortlink' href='https://www.suzukijabodetabek.id/?p=383' />
+<link rel="alternate" type="application/json+oembed" href="https://www.suzukijabodetabek.id/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.suzukijabodetabek.id%2Fsimulasi-kredit%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.suzukijabodetabek.id/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.suzukijabodetabek.id%2Fsimulasi-kredit%2F&#038;format=xml" />
+		<style>
+        /* logo location */
+        .touchy-logo-wrapper { background-color:; }
+        .touchy-logo-wrapper { background-color:; }
+        .touchy-logo a { color:; }
+        .touchy-logo a:hover { color:; }
+        .touchy-logo-wrapper {
+            
+                text-align:center;
+                        }
+        .touchy-logo-wrapper-bg {
+            background-image:url('');
+            opacity:;
+                    }
+        .touchy-logo-image img { max-height:px; }
+
+        /* if logo location hidden*/
+                .touchy-wrapper { position:fixed; top:0; }
+        .touchy-search-wrapper { position:fixed; top:0; }
+        .touchy-by-bonfire-wrapper { position:fixed; top:65px; }
+                
+        /* text labels */
+        .touchy-wrapper .touchy-back-button::before {
+            content:'';
+            color:;
+        }
+        .touchy-wrapper .touchy-call-button::before {
+            content:'Telpon Sekarang';
+            color:#ffffff;
+            margin-left:-2px;
+        }
+        .touchy-wrapper .touchy-email-button::before {
+            content:'Simulasi Kredit';
+            color:#ffffff;
+        }
+        .touchy-wrapper .touchy-search-button::before {
+            content:'Whatsapp';
+            color:#ffffff;
+        }
+        .touchy-wrapper .touchy-menu-button::before {
+            content:'';
+            color:;
+        }
+        
+        /* text label hovers (on touch devices only) */
+                .touchy-wrapper .touchy-back-button:hover::before,
+        .touchy-wrapper .touchy-call-button:hover::before,
+        .touchy-wrapper .touchy-email-button:hover::before,
+        .touchy-wrapper .touchy-search-button:hover::before,
+        .touchy-wrapper .touchy-menu-button:hover::before {
+            color:#fff;
+        }
+        .touchy-wrapper .touchy-back-button:hover::before { color:; }
+        .touchy-wrapper .touchy-call-button:hover::before { color:#ffffff; }
+        .touchy-wrapper .touchy-email-button:hover::before { color:#ffffff; }
+        .touchy-wrapper .touchy-search-button:hover::before { color:#ffffff; }
+        .touchy-wrapper .touchy-menu-button:hover::before { color:; }
+                /* text label colors for search and menu button active states */
+        .touchy-wrapper .touchy-search-button-active::before { color:#ffffff; }
+        .touchy-wrapper .touchy-menu-button-active::before { color:; }
+        
+        /* button borders */
+        .touchy-wrapper .touchy-back-button,
+        .touchy-wrapper .touchy-call-button,
+        .touchy-wrapper .touchy-email-button,
+        .touchy-wrapper .touchy-search-button,
+        .touchy-wrapper .touchy-menu-button {
+            border-width:0;
+        }
+
+                
+                
+                
+                
+                
+        /* icon positioning if text label entered */
+                
+                .touchy-call-text-label-offset > div { position:relative; top:-9px; }
+        .touchy-call-text-label-offset i { position:relative; top:-5px; }
+                
+                .touchy-email-text-label-offset > div { margin-top:-9px; }
+        .touchy-email-text-label-offset i { position:relative; top:-5px; }
+                
+                .touchy-search-text-label-offset > div { margin-top:-11px; }
+        .touchy-search-text-label-offset i { position:relative; top:-5px; }
+                
+                .touchy-menu-text-label-offset i { position:relative; top:-3px; }
+                
+        /* custom text label font size */
+        .touchy-wrapper .touchy-back-button::before,
+        .touchy-wrapper .touchy-call-button::before,
+        .touchy-wrapper .touchy-email-button::before,
+        .touchy-wrapper .touchy-search-button::before,
+        .touchy-wrapper .touchy-menu-button::before {
+            font-size:px;
+        }
+        
+		/* BACK button */
+		.touchy-wrapper .touchy-back-button { color:; background-color:; }
+		/* CALL button */
+		.touchy-wrapper .touchy-call-button { color:#ffffff; background-color:#0066bf; }
+		/* EMAIL button */
+		.touchy-wrapper .touchy-email-button { color:#ffffff; background-color:#ffb200; }
+		/* SEARCH button */
+		.touchy-wrapper .touchy-search-button { color:#ffffff; background-color:#00a808; }
+        /* when search button active */
+        .touchy-search-button-active { color:#ffffff !important; background-color:#15a81d !important; }
+        .touchy-search-button-active .touchy-default-search-outer {            
+            -webkit-box-shadow:0px 0px 0px 2px #ffffff !important;
+            -moz-box-shadow:0px 0px 0px 2px #ffffff !important;
+            box-shadow:0px 0px 0px 2px #ffffff !important;
+        }
+        .touchy-search-button-active .touchy-default-search-outer:after,
+        .touchy-search-button-active .touchy-default-search-inner,
+        .touchy-search-button-active .touchy-default-search-inner:before,
+        .touchy-search-button-active .touchy-default-search-inner:after { background-color:#ffffff !important; }
+        /* MENU button */
+		.touchy-menu-button { color:; background-color:; }
+        .touchy-default-menu,
+        .touchy-default-menu:before,
+        .touchy-default-menu:after { background-color:; }
+        /* when menu button active */
+        .touchy-menu-button-active { color:; background-color:; }
+        .touchy-menu-button-active .touchy-default-menu,
+        .touchy-menu-button-active .touchy-default-menu:before,
+        .touchy-menu-button-active .touchy-default-menu:after { background-color:; }
+
+        /* show top button hovers on non-touch devices only */
+                .touchy-back-button:hover,
+        .touchy-call-button:hover,
+        .touchy-email-button:hover,
+        .touchy-search-button:hover,
+        .touchy-menu-button:hover {
+            color:#fff;
+            background-color:#07B1FF;
+        }
+        .touchy-back-button:hover { color:; background-color:; }
+        .touchy-call-button:hover { color:#ffffff; background-color:#1e73be; }
+        .touchy-email-button:hover { color:#ffffff; background-color:#ffba1c; }
+        .touchy-search-button:hover { color:#ffffff; background-color:#15a81d; }
+        .touchy-menu-button:hover { color:; background-color:; }
+
+        /* default back button */
+        .touchy-back-button:hover .touchy-default-back,
+        .touchy-back-button:hover .touchy-default-back:before,
+        .touchy-back-button:hover .touchy-default-back:after { background-color:#fff;; }
+
+        /* default call icon hovers */
+        .touchy-call-button:hover .touchy-default-call-one,
+        .touchy-call-button:hover .touchy-default-call-two,
+        .touchy-call-button:hover .touchy-default-call-three,
+        .touchy-call-button:hover .touchy-default-call-one:before,
+        .touchy-call-button:hover .touchy-default-call-two:before,
+        .touchy-call-button:hover .touchy-default-call-three:before,
+        .touchy-call-button:hover .touchy-default-call-one:after,
+        .touchy-call-button:hover .touchy-default-call-two:after,
+        .touchy-call-button:hover .touchy-default-call-three:after { background-color:#ffffff; }
+
+        /* default email icon hovers */
+        .touchy-email-button:hover .touchy-default-email-outer {
+            -webkit-box-shadow:0px 0px 0px 2px #ffffff;
+            -moz-box-shadow:0px 0px 0px 2px #ffffff;
+            box-shadow:0px 0px 0px 2px #ffffff;
+        }
+        .touchy-email-button:hover .touchy-default-email-outer:before,
+        .touchy-email-button:hover .touchy-default-email-outer:after,
+        .touchy-email-button:hover .touchy-default-email-outer .touchy-default-email-inner:before,
+        .touchy-email-button:hover .touchy-default-email-outer .touchy-default-email-inner:after { background-color:#ffffff; }
+        
+        /* default search icon hovers */
+        .touchy-search-button:hover .touchy-default-search-outer {
+            -webkit-box-shadow:0px 0px 0px 2px #ffffff;
+            -moz-box-shadow:0px 0px 0px 2px #ffffff;
+            box-shadow:0px 0px 0px 2px #ffffff;
+        }
+        .touchy-search-button:hover .touchy-default-search-outer:after,
+        .touchy-search-button:hover .touchy-default-search-outer .touchy-default-search-inner,
+        .touchy-search-button:hover .touchy-default-search-outer .touchy-default-search-inner:before,
+        .touchy-search-button:hover .touchy-default-search-outer .touchy-default-search-inner:after { background-color:#ffffff; }
+        
+        /* default menu icon hover */
+        .touchy-menu-button:hover .touchy-default-menu,
+        .touchy-menu-button:hover .touchy-default-menu:before,
+        .touchy-menu-button:hover .touchy-default-menu:after { background-color:#fff; }
+                
+        /* default back button */
+        .touchy-default-back,
+        .touchy-default-back:before,
+        .touchy-default-back:after { background-color:; }
+        
+        /* default call button */
+        .touchy-default-call-one,
+        .touchy-default-call-two,
+        .touchy-default-call-three,
+        .touchy-default-call-one:before,
+        .touchy-default-call-two:before,
+        .touchy-default-call-three:before,
+        .touchy-default-call-one:after,
+        .touchy-default-call-two:after,
+        .touchy-default-call-three:after { background-color:#ffffff; }
+        
+        /* default email button */
+        .touchy-email-button .touchy-default-email-outer {
+            -webkit-box-shadow:0px 0px 0px 2px #ffffff;
+            -moz-box-shadow:0px 0px 0px 2px #ffffff;
+            box-shadow:0px 0px 0px 2px #ffffff;
+        }
+        .touchy-email-button .touchy-default-email-outer:before,
+        .touchy-email-button .touchy-default-email-outer:after,
+        .touchy-email-button .touchy-default-email-outer .touchy-default-email-inner:before,
+        .touchy-email-button .touchy-default-email-outer .touchy-default-email-inner:after { background-color:#ffffff; }
+        
+        /* default search button */
+        .touchy-search-button .touchy-default-search-outer {
+            -webkit-box-shadow:0px 0px 0px 2px #ffffff;
+            -moz-box-shadow:0px 0px 0px 2px #ffffff;
+            box-shadow:0px 0px 0px 2px #ffffff;
+        }
+        .touchy-search-button .touchy-default-search-outer:after,
+        .touchy-search-button .touchy-default-search-outer .touchy-default-search-inner,
+        .touchy-search-button .touchy-default-search-outer .touchy-default-search-inner:before,
+        .touchy-search-button .touchy-default-search-outer .touchy-default-search-inner:after { background-color:#ffffff; }
+        
+        /* menu bar dividers */
+                
+		/* menu bar dividers */
+		.touchy-back-button:after,
+        .touchy-call-button:after,
+        .touchy-email-button:after,
+        .touchy-search-button:after { background-color:#EBEBEB; }
+        
+        /* hide button dividers on button hover (on non-touch devices only) */
+                .touchy-back-button:hover:after,
+        .touchy-call-button:hover:after,
+        .touchy-email-button:hover:after,
+        .touchy-search-button:hover:after { opacity:0; }
+        
+        /* search field placeholder color */
+        input.touchy-search-field::-webkit-input-placeholder { color: !important; }
+        input.touchy-search-field:-moz-placeholder { color: !important; }
+        input.touchy-search-field::-moz-placeholder { color: !important; }
+        /* search field text color */
+        .touchy-search-wrapper input.touchy-search-field { color:; }
+        /* search field 'clear field' button color */
+        .touchy-clear-search::before,
+        .touchy-clear-search::after { background-color: }
+        /* search field background color */
+        .touchy-search-wrapper input.touchy-search-field { background-color:; }
+        /* search button text + background color */
+        .touchy-search-wrapper input.touchy-search { color:; background-color:; }
+
+		/* accordion + tooltip background, corner radius, menu end marker */
+        .touchy-by-bonfire {
+            border-radius:px;
+            border-bottom-width:px;
+        }
+		.touchy-menu-tooltip:before { border-bottom-color:; }
+		.touchy-by-bonfire { background:; border-color:; }
+        /* if tooltip color overridden */
+        .touchy-menu-tooltip:before { border-bottom-color:; }
+        
+        /* sub-menu background */
+        .touchy-by-bonfire ul.sub-menu { background:; }
+
+        /* horizontal menu item divider */
+        .touchy-by-bonfire .menu > li,
+        .touchy-by-bonfire ul.sub-menu > li:first-child { border-color:; }
+        /* horizontal menu item divider (sub-menu) */
+        .touchy-by-bonfire ul li ul li:after { background-color:; }
+
+		/* accordion menu separator */
+		.touchy-by-bonfire .menu li span { border-left-color:; }
+        /* accordion menu separator (sub-menu) */
+		.touchy-by-bonfire .sub-menu li span { border-left-color:; }
+        
+		/* submenu arrow animation */
+        
+            .touchy-by-bonfire span.touchy-submenu-active span::before {
+                -webkit-transform:rotate(-45deg);
+                -moz-transform:rotate(-45deg);
+                transform:rotate(-45deg);
+            }
+            .touchy-by-bonfire span.touchy-submenu-active span::after {
+                -webkit-transform:rotate(45deg);
+                -moz-transform:rotate(45deg);
+                transform:rotate(45deg);
+            }
+                    /* accordion menu item */
+		.touchy-by-bonfire .menu a {
+            font-size:px;
+            line-height:px;
+            font-family:;
+            color:;
+        }
+        .touchy-by-bonfire ul li.current-menu-item > a,
+        .touchy-by-bonfire .sub-menu .current-menu-item > a { color:; }
+		.touchy-by-bonfire .menu a:hover,
+        .touchy-by-bonfire ul li.current-menu-item a:hover,
+        .touchy-by-bonfire .menu a:active { color:; }
+        
+        /* menu icons */
+        .touchy-by-bonfire .menu a i {
+            font-size:px;
+            color:;
+        }
+        .touchy-by-bonfire .sub-menu a i {
+            font-size:px;
+            color:;
+        }
+
+		/* menu description */
+		.touchy-menu-item-description {
+            font-size:px;
+            line-height:px;
+            margin-top:px;
+            font-family:;
+            color:;
+        }
+
+		/* accordion sub-menu item */
+		.touchy-by-bonfire .sub-menu a { color:; }
+		.touchy-by-bonfire .sub-menu a:hover, .touchy-by-bonfire .sub-menu a:active { color:; }
+		
+        /* highlighted menu item */
+        .touchy-by-bonfire ul li.marker > a { border-color:; }
+        
+		/* content overlay color + transparency */
+		.touchy-overlay { background-color:; }
+        .touchy-overlay-active { opacity:; }
+		
+		/* menu transparency */
+		.touchy-wrapper { opacity:; }
+        
+        /* hide menubar shadow */
+                
+        /* widget area background */
+        .touchy-widgets-wrapper { background-color:; }
+        
+        /* absolute positioning */
+                
+        /* bottom positioning */
+                .touchy-logo-wrapper {
+            z-index:99992 !important;
+                        -moz-box-shadow:0 0 2px 0 rgba(0,0,0,0.14);
+            -webkit-box-shadow:0 0 2px 0 rgba(0,0,0,0.14);
+            box-shadow:0 0 2px 0 rgba(0,0,0,0.14);
+                    }
+        .touchy-wrapper {
+            position:fixed !important;
+            top:auto;
+            bottom:0;
+        }
+        .touchy-by-bonfire-wrapper {
+            position:fixed !important;
+            top:20px;
+            bottom:65px;
+        }
+        .touchy-search-wrapper {
+            position:fixed !important;
+            top:auto;
+            bottom:0;
+        }
+        .touchy-search-wrapper-active {
+            -webkit-transform:translateY(-51px);
+            -moz-transform:translateY(-51px);
+            transform:translateY(-51px);
+        }
+        .touchy-by-bonfire {
+            position:absolute;
+            top:auto;
+            bottom:0;
+            border-width:3px 0 0 0;
+        }
+        .touchy-menu-tooltip:before {
+            top:-15px;
+            border-bottom:0;
+            border-top:6px solid #fff;
+            border-top-color:;
+        }
+        .touchy-by-bonfire {
+            -webkit-transform:translateY(10px);
+            -moz-transform:translateY(10px);
+            transform:translateY(10px);
+        }
+                
+        /* hide logo area background shadow */
+                
+        /* accordion expand icon */
+		.touchy-by-bonfire .touchy-sub-arrow-inner:before,
+        .touchy-by-bonfire .touchy-sub-arrow-inner:after { background-color:; }
+        /* accordion expand icon (sub-menu) */
+        .touchy-by-bonfire .sub-menu li .touchy-sub-arrow-inner:before,
+        .touchy-by-bonfire .sub-menu li .touchy-sub-arrow-inner:after { background-color:; }
+        
+        /* show sub-menu arrow hover colors on non-touch devices only */
+                .touchy-by-bonfire .touchy-sub-arrow:hover .touchy-sub-arrow-inner:before,
+        .touchy-by-bonfire .touchy-sub-arrow:hover .touchy-sub-arrow-inner:after { background-color:#777; }
+        /* accordion expand icon hover */
+        .touchy-by-bonfire .touchy-sub-arrow:hover .touchy-sub-arrow-inner:before,
+        .touchy-by-bonfire .touchy-sub-arrow:hover .touchy-sub-arrow-inner:after { background-color:; }
+        /* accordion expand icon hover (sub-menu) */
+        .touchy-by-bonfire .sub-menu li .touchy-sub-arrow:hover .touchy-sub-arrow-inner:before,
+        .touchy-by-bonfire .sub-menu li .touchy-sub-arrow:hover .touchy-sub-arrow-inner:after { background-color:; }
+                
+        /* full menu item menu */
+        .touchy-by-bonfire .menu .full-item-arrow-hover > .touchy-sub-arrow .touchy-sub-arrow-inner::before,
+        .touchy-by-bonfire .menu .full-item-arrow-hover > .touchy-sub-arrow .touchy-sub-arrow-inner::after,
+        .touchy-by-bonfire .menu > li > span.touchy-submenu-active .touchy-sub-arrow-inner::before,
+        .touchy-by-bonfire .menu > li > span.touchy-submenu-active .touchy-sub-arrow-inner::after { background-color:; }
+        /* full menu item sub-menu */
+        .touchy-by-bonfire .sub-menu .full-item-arrow-hover > .touchy-sub-arrow .touchy-sub-arrow-inner::before,
+        .touchy-by-bonfire .sub-menu .full-item-arrow-hover > .touchy-sub-arrow .touchy-sub-arrow-inner::after,
+        .touchy-by-bonfire .sub-menu > li > span.touchy-submenu-active .touchy-sub-arrow-inner::before,
+        .touchy-by-bonfire .sub-menu > li > span.touchy-submenu-active .touchy-sub-arrow-inner::after { background-color:; }
+        
+        /* if submenu arrow divider is hidden */
+                
+        /* push down Touchy if WordPress toolbar is active */
+                
+		/* hide touchy between resolutions */
+		@media ( min-width:px) and (max-width:px) {
+			.touchy-logo-wrapper,
+            .touchy-search-wrapper,
+            .touchy-wrapper,
+			.touchy-overlay,
+			.touchy-by-bonfire { display:none !important; }
+		}
+		/* hide theme menu */
+				</style>
+		<!-- END CUSTOM COLORS (WP THEME CUSTOMIZER) -->
+	
+	<link rel="icon" href="https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/cropped-Favicon-Suzuki-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/cropped-Favicon-Suzuki-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/cropped-Favicon-Suzuki-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/cropped-Favicon-Suzuki-270x270.png" />
+		
+		<script type="text/javascript">
+	    	$("document").ready(function ($) {
+	    		$('ul').accordion();
+	     	});
+</script>
+
+<script type="text/javascript">
+    		$("document").ready(function($){
+	    		$(".mob").slideUp();
+				$(".fmenu").click(function(){
+		    		$(".mob").slideToggle();
+				});
+				$(".opens").mouseenter(function(){
+		    		$(".layout, .styling, .mmenu").css("left","0");
+					$(".opens").hide();
+					$(".closes").show();
+				});
+				$(".fa-info").click(function(){
+				    $(".sss").slideToggle();
+				});
+				
+			});
+</script>
+		
+<script>
+      $(function(){
+        
+          $(window).resize(function(){
+            var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+            $('.parallax-container').height(parallaxHeight);
+          }).trigger('resize');
+        
+      });
+</script>
+<style>
+.dealpar {background-image: url("https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/Background-Websiters-Indonesia.jpg");}
+.top-foot {background-image: url("https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/Background-Websiters-Indonesia.jpg");}
+.befbread {
+    background: #333 url("https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/Background-Websiters-Indonesia.jpg");}
+.mod-form {
+    background: #fff url("https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/Background-Websiters-Indonesia.jpg") center;
+}
+	</style>
+	
+<style>
+body {
+background: #ffffff;
+color: #222222;
+}
+#map {height: 350px}
+
+a {
+color: #004477;
+}
+
+.topin,
+.fade .topin {
+background: #003366;
+color : #ffffff;
+}
+
+.home .topin {
+color : #ffffff;
+background: rgba(0,51,102,1);
+}
+
+.home.fade .topin {
+background: #003366;
+}
+
+.iright .iworks {
+background: #002266;
+color : #ffdd11;
+}
+
+.iright .itimers {
+background: #ffdd11;
+color : #003366;
+}
+
+.dealnav,
+.fade .dealnav {
+background: #eeeeee}
+
+.home .dealnav {
+background: rgba(238,238,238,1);
+}
+
+.home.fade .dealnav {
+background: #eeeeee}
+
+.logo {
+background: rgba(238,238,238,1);
+}
+
+.mobi {
+background: #eeeeee}
+
+.mobi .accordion li a {
+color: #003366;
+}
+
+.mobi .accordion li.menu-item-has-children:after {
+border-top: 4px solid #003366;
+}
+
+.mobi .accordion li {
+border-bottom: 1px solid rgba(0,51,102,0.2);
+}
+
+.mobi .accordion li ul li:first-child {
+    border-top: 1px solid rgba(51,51,51,0.2);
+	margin-top: -1px;
+}
+
+.nav .dd li:hover {
+background: #003366;
+}
+
+.nav .dd li a {
+color: #003366;
+}
+
+.nav .dd li:hover a {
+color: #ffffff;
+}
+
+.nav .dd li ul {
+background: #003366;
+}
+
+.nav .dd li.full-image ul,
+.nav .dd li.full-image:hover ul {
+    background: #ffffff;
+}
+
+.nav .dd li.full-image ul li a {
+    color: #003366;
+}
+
+.ca .dv {
+    background: #003366;
+}
+
+.ca .dv .fa {
+color: #ffffff;
+}	
+
+.ca .dv:hover {
+    background: #eeeeee;
+}
+
+.ca .dv:hover .fa {
+color: #003366;
+}	
+	
+#topsl {
+padding-top: 120px }
+	
+.eventlay {
+background: rgba(238,238,238,0.8 );
+}	
+
+.comev {
+background: rgba(238,238,238,0.8 );
+color : #333333;
+}
+
+.comev:before {
+border-bottom: 30px solid rgba(238,238,238,0.8 );
+}
+
+.comev:after {
+border-bottom: 30px solid rgba(238,238,238,0.8 );
+}
+
+.eveinn .td .ddt {
+    border-right: 1px solid #003366;
+	color:  #333333;
+}
+
+.td h4 {
+    color: #333333;
+}	
+
+.eveinn .td .ddl {
+    color: #333333;
+}
+
+.td h2 a {
+    color: #003366;
+}	
+
+.hoven {
+background: #eeeeee;
+}
+.evblock {
+color: #333333;
+}
+.evblock .com {
+background: #333333;
+color: #eeeeee;
+}
+.evblock h4 {
+color: #333333;
+}
+
+.evblock h2 a {
+color: #333333;
+}
+
+.abefore {
+color: #333333;
+}
+.abefore h3 {
+color: #003366;
+}
+.abefore a {
+color: #003366;
+}
+
+#clockz .tmrz .circ {
+    border: 6px solid #003366;
+    color: #003366;
+}	
+
+#clockz .coutext {
+color: #003366;
+}
+
+#clockz .tmrz .circ.secring .secondz {
+    color: #003366;
+}	
+
+#clockz .tmrz .circ.secring .rotate {
+    border: 6px solid #ffdd11;
+    border-top: 6px solid #003366;
+}
+
+#demos {
+    background: #222222;
+}
+
+.islide {
+    background: #003366 ;
+}
+.item:hover .islide .topslide1, 
+.item:hover .islide .topslide2, 
+.item:hover .islide .topslide3, 
+.item:hover .islide .topslide4 {
+background: rgba(0,51,102,0.6);
+}
+.topslide5 .fa {
+    background: #003366;
+	color: #ffdd11; 
+}
+
+.detitle {
+    background: #003355;
+	color: #eeeeee;
+}
+
+.de2,
+.de4,
+.de6,
+.de8,
+.de10,
+.de12,
+.de14 {
+    opacity: 0.98;
+}
+
+.deald {
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+.detitle a {
+color: #ffffff;
+}
+
+.detitle h3 span {
+    background: #145e86;
+    color: #ffffff;
+}
+
+.detitle h3 span.Limited {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.latest .stat.Limited,
+.listimg .stat.Limited {
+    background: #ffdd11;
+    color: #003366;
+}
+.pagination a, 
+.pagination .disabled {
+    background: #ffdd11;
+    color: #003366;
+	box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.latest .stat.Indent,
+.listimg .stat.Indent,
+.pagination a:hover, 
+.pagination a.active {
+    background: #145e86;
+    color: #ffffff;
+}	
+
+
+.latest.owl-carousel .owl-nav .owl-prev {
+	background: #222222;
+    color: #ffffff;
+    border: 2px solid #ffdd11;
+}
+
+.latest.owl-carousel .owl-nav .owl-next {
+    background: #222222;
+    color: #ffffff;
+    border: 2px solid #ffdd11;
+}
+
+
+
+
+.dealay {
+background: rgba(255,221,17,0.9);
+}	
+
+.callus {
+    background: #ffdd11;
+    border-top: 10px solid #003355;
+}
+
+.callus:after {
+    border-top: 200px solid #003355;
+}
+
+.tafo {
+    border: 10px solid #ffdd11;
+    background: #003355;
+}
+
+.twocon {
+    background: #ffdd11;
+	color: #333333;
+}
+
+.twocon a {
+color: #003366;
+}
+
+.twocon .fa {
+color: #333333;
+}
+
+.tbio {
+    background: #003355;
+    color: #ffdd11;
+}
+
+.inbio:after {
+    border-top: 25px solid #003355;
+}
+
+.ag-two h2 {
+    color: #003366;
+}
+
+.afteralay {
+background: rgba(255,221,17,0.8);
+}
+
+.bloginn h3 {
+color: #003366;
+}
+.bloginn h3:after {
+background: #003366;
+}
+.bloginn p {
+color: #333333;
+}
+
+.foage {
+	background: #003355;
+}
+
+.bebio {
+    color: #ffdd11;
+}
+
+.bio {
+    color: #ffffff;
+}
+
+.prom {
+    border-bottom: 1px solid rgba(0,51,102,0.3);
+    color: #003366;
+}	
+
+.hocall {
+    color: #333333;
+}
+.hocall a {
+    color: #003366;
+}	
+
+.hocall .da.ph {
+    background: #003366;
+	color: #ffffff;
+}
+
+.hocall .da.en {
+	background: #003366;
+	color: #ffffff;
+}
+
+.hocall .da.wh {
+    background: #003366;
+	color: #ffffff;
+}
+
+.hocall .da.fb {
+	background: #003366;
+	color: #ffffff;
+}
+
+.hocall .da.tw {
+	background: #003366;
+	color: #ffffff;
+}
+
+.hocall .da.in {
+	background: #003366;
+	color: #ffffff;
+}
+
+.hocall .da.ph:after {
+    border-top: 10px solid #003366;
+}
+
+.hocall .da.en:after {
+    border-top: 10px solid #003366;
+}
+
+.hocall .da.wh:after {
+    border-top: 10px solid #003366;
+}
+
+.hocall .da.fb:after {
+    border-top: 10px solid #003366;
+}
+
+.hocall .da.tw:after {
+    border-top: 10px solid #003366;
+}
+
+.hocall .da.in:after {
+    border-top: 10px solid #003366;
+}
+
+
+.adds {
+    border-bottom: 1px solid rgba(0,51,102,0.3);
+    color: #003366;
+}
+
+.ledag .blog-content {
+color: #333333;
+}
+
+.ledag .blog-content a {
+color: #003366;
+}
+
+.secagent {
+    background: #fdfdfd;
+}
+
+.sctitle {
+    color: #003366;
+}
+
+.listimg .imglist {
+    background: #003366;
+}
+
+.listimg .imglist .listlay {
+background: rgba(0,51,102,0.9);
+}
+
+.listimg .imglist .detlay a {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.listimg .modets {
+    background: #003366;
+    color: #ffffff;
+}
+
+.modets h4 {
+    color: #eeeeee;
+}
+
+.modets strong {
+    color: #ffdd11;
+}
+
+.modets a {
+    color: #ffffff;
+}
+
+
+
+.breadcrumbs {
+    color: #333333;
+}
+
+.befbread .breadlay {
+background: rgba(238,238,238,0.8);
+}
+
+.breadcrumbs a {
+    color: #003366;
+}
+
+.mexc h2 a {
+    color : #333333;
+}
+
+.star {
+    color : #333333;
+}
+
+.bigarc:after {
+    background : #333333;
+}
+
+.calendars {
+    background: rgba(0,51,102,0.8);
+    color: #ffdd11;
+}
+
+.wag {
+    background: #ffdd11;
+	color: #003366;
+}
+
+.timecal .fa {
+    background: #ffffff;
+    color: #003366;
+}
+
+.blog-content h2.sptitle {
+    color: #333333;
+}	
+
+.post-footer {
+    background: #dddddd;
+    color: #003366;
+}
+
+.post-footer a {
+    color: #003366;
+}
+
+.blog-content .drp {
+    border-top: 3px solid #003366;
+}
+
+.blog-content .srp {
+    border: 3px solid #003366;
+    background: #ffffff;
+    color: #003366;
+}
+
+.blog-content .pr-meta h3 a {
+    color: #333333;
+}
+
+.blog-content .pr-meta span {
+    color: #222222;
+}
+
+.blog-content .relthlay {
+    background: rgba(255,221,17, 0.8 );
+}
+
+.blog-content .relth .fa {
+    color: #003366;
+    border: 3px solid #003366;
+}
+
+#submit {
+    background: #ffffff;
+    color: #003366;
+}
+
+
+
+
+.dealvent {
+    background: #003366;
+    border-top: 3px solid #ffdd11;
+    color: #ffffff;
+}
+.detc {
+    background: #ffdd11;
+    color: #003366;
+}	
+
+.singmod {
+    background: #003366;
+}	
+
+.left-inn .stats {
+    background: #145e86;
+    color: #ffffff;
+}
+
+.left-inn .stats.Limited {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.smtop.owl-theme .owl-nav [class*="owl-"] {
+    background: #003366;
+    color: #ffffff;
+}
+
+.top-box .box-right .right-inn table td {
+    border-bottom: 1px solid rgba(238,238,238,0.1);
+	color: rgba(238,238,238,0.8);
+}
+
+.top-box .box-right .right-inn .lcar a.vm {
+    background: #003366;
+    color: #ffffff;
+	border: 2px solid #ffffff;
+}
+.top-box .box-right .right-inn .lcar span {
+    background: #003366;
+    color: #ffffff;
+	border: 2px solid #ffffff;
+}	
+.top-box .box-right .right-inn .lcar .sos {
+    background: #ffdd11;
+}
+
+.top-box .box-right .right-inn .lcar .sos a {
+    color: #003366;
+}
+
+.top-box .box-right .right-inn h4 {
+    color: #ffffff;
+}
+
+.top-box .box-right .right-inn table td.pr.hr {
+    color: #eeeeee;
+}
+
+.feat {
+    border-top: 4px solid #ffdd11;
+}
+
+.ltop ul li .fa {
+    color: #003366;
+}
+
+.desc {
+    border-top: 4px solid #ffdd11;
+}
+
+.in-thumb {
+    border-top: 4px solid #ffdd11;
+}
+
+.moname {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.motype {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.form-lay {
+    background: rgba(0,51,102,0.8 );
+    color: #ffffff;
+}
+
+.mod-form a {
+    color: #ffffff;
+}
+
+.mod-form .bio,
+.mod-form .bebio {
+    color: #ffffff;
+}
+
+.formcon .fa {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.deal-form input[type="submit"] {
+    color: #003366;
+    background: #ffdd11;
+}
+
+.relsec h4 span {
+    border: 1px solid #003366;
+    background: #ffffff;
+    color: #003366;
+}
+
+.relsec {
+    border-top: 1px solid #003366;
+}
+
+
+.deal-contact {
+    background: #f7f7f7;
+	color: #555555;
+}
+
+.dealloc {
+    color: #333333;
+}
+
+.dealcf7 .wpcf7-form-control-wrap {
+    background: #444;
+    border: 1px solid #444;
+}	
+.dealcf7 .deal-form input,
+.dealcf7 .deal-form textarea {
+    background: #444;
+    color: #ddd;
+}
+.dealcf7 .deal-form .fa {
+    color: #ddd;
+    background: #444;
+}
+.dealcf7 .deal-form input[type="submit"] {
+    color: #fff;
+    background: #090;
+}
+
+
+
+
+
+
+	
+.widget {
+    background: #003366;
+	color: #ffffff;
+}	
+
+.widget p, .textwidget {
+    color: #ffffff;
+}
+
+.widget h3, .widget-small h3, .widget h3 a, .widget-small h3 a {
+    background: #145e86;
+    color: #ffffff;
+}
+
+.widget a, .widget-small a {
+    color: #ffdd11;
+}
+
+.widget li, .widget-small li,
+.wimodel {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.widget.widget_rss li, .widget.widget_meta li, 
+.widget.widget_nav_menu li, 
+.widget.widget_recent_entries li, 
+.widget.widget_pages li, 
+.widget.widget_archive li, 
+.widget.widget_categories li {
+    font: 14px 'Open Sans', sans-serif;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.widget li ul li:first-child, .widget-small li ul li:first-child {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.mstat {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.mtypes {
+	background: #ffffff;
+    color: #003366;
+}
+
+.seeall {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.widget_slidemod .owl-carousel.owl-theme .owl-nav [class*="owl-"] {
+    background: #ffdd11;
+	color: #003366;
+}
+
+.widget_slidemod .owl-carousel .item .ssstat {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.widget .tagcloud a {
+    background: #ffffff;
+    color: #003366;
+}
+
+#sidebar .search-post fieldset,
+#sidebar .search-post input {
+    background: #ffffff;
+	color: #333333;
+}
+
+#sidebar .search-post button {
+    color: #ffdd11;
+    background: #145e86;
+}
+
+
+
+
+
+.daev {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.widget_slidemod .bstitle .fa {
+    background: #ffdd11;
+    color: #003366;
+}
+
+.widget_slidemod .bstitle a {
+    color: #003366;
+}
+
+.widget_slidemod .bsprice strong {
+    color: #ffffff;
+}
+
+.mprice span {
+    color: #ffffff;
+}
+
+
+
+
+
+
+.footlay {
+    background: rgba(255,221,17,0.505);	
+}
+.stcon {
+    color: #003366;
+}
+
+.fosos {
+    color: #333333;
+}
+
+.fosos .fa {
+    color: #ffffff;
+    background: #003366;
+}
+
+.fosearch .search-post,
+.fosearch input,
+.fosearch select {
+    background: #003366;
+	color: #ffffff;
+}
+
+.fosearch .divsel {
+    border-left: 1px solid rgb(0,31,102);	
+}
+
+.fosearch button {
+    background: #145e86;
+    color: #ffffff;
+}
+
+
+
+.dealfoot {
+    background: #003366;
+}
+
+.foot-inn .widget {
+    background: #003366;
+    color: #dddddd;
+	border-top: 3px solid #003366;
+}
+
+.foot-inn .widget p, .foot-inn .textwidget {
+    color: #dddddd;
+}
+
+.foot-inn .widget h3, .foot-inn .widget-small h3 {
+    background: #003366;
+    color: #ffffff;
+}
+
+.foot-inn .widget.widget_rss li, 
+.foot-inn .widget.widget_meta li, 
+.foot-inn .widget.widget_nav_menu li, 
+.foot-inn .widget.widget_recent_entries li, 
+.foot-inn .widget.widget_pages li, 
+.foot-inn .widget.widget_archive li, 
+.foot-inn .widget.widget_categories li {
+    border-bottom: 1px dashed rgba(0,0,0,0.1);	
+    color: #dddddd;
+}
+
+.foot-inn .widget a, .foot-inn .widget-small a {
+    color: #ffffff;
+}
+
+.foot-inn .widget_slidemod .bstitle .fa {
+    background: #003366;
+    color: #003366;
+}
+
+.foot-inn .mprice span {
+    color: #ffdd11;
+}
+.foot-inn .widget_slidemod .bsprice strong {
+    color: #ffdd11;
+}
+
+.foot-inn .search-post,
+.foot-inn .search-post fieldset {
+    background: #ffffff;
+}
+
+.foot-inn .search-post input {
+    background: #ffffff;
+    color: #003366;
+}
+
+.foot-inn .search-post button {
+    color: #003366;
+    background: #ffdd11;
+}
+
+.foot-inn .widget .tagcloud a {
+    background: #eeeeee;
+    color: #003366;
+}
+
+.footer {
+    color: #ffffff;
+    background: #052546;
+}
+
+.footer a {
+    color: #ffdd11;
+}
+
+#return-to-top i {
+    background: #ffdd11;
+    color: #003366;
+}
+
+
+
+@media screen and (max-width:980px) {
+.home .dealnav {
+background: #eeeeee;
+}
+#topsl {
+    padding-top: 80px;
+}
+.eventlay {
+background: #eeeeee;
+}
+.comev {
+background: #eeeeee;
+}
+
+.comev:before {
+border-bottom: 30px solid #eeeeee;
+}
+
+.comev:after {
+border-bottom: 30px solid #eeeeee;
+}
+}
+
+@media screen and (max-width:640px) {
+#topsl {
+    padding-top: 60px;
+}
+}
+
+@media screen and (max-width:480px) {
+.callus:after {
+    border-top: 60px solid #003355;
+}
+}
+
+
+@media screen and (max-width:480px) {
+.logo {
+background: rgba(238,238,238, 1);
+}
+.home .dealnav {
+    background: #eeeeee}
+.ca .dv,
+.ca .dv:hover {
+background: #eeeeee;
+}
+.ca .dv .fa,
+.ca .dv:hover .fa {
+color: #003366;
+}
+.callus {
+    border-top: 5px solid #003355;
+}
+.callus:after {
+    border-top: 30px solid #003355;
+}
+}
+</style>
+
+
+	<!-- Tema iDealer dari ciuss.com -->
+
+	</head>
+	
+	<body class="page-template-default page page-id-383">
+	    <div class="dear  fixed boxed">
+    	
+		<div class="wrapper">
+		
+		    <!-- MOBILE NAV -->
+			
+	    	<div class="mob">
+    	        <div class="mobi"><ul id="acc" class="accordion"><li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="https://www.suzukijabodetabek.id/">Beranda</a></li>
+<li id="menu-item-288" class="full-image menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Produk</a>
+<ul class="sub-menu">
+<li id="menu-item-390" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-ignis/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/IGNIS-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Ignis</a></li>
+<li id="menu-item-391" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-xl7/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/XL7-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki XL7</a></li>
+<li id="menu-item-392" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-ertiga/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERITGA-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Ertiga</a></li>
+<li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-ertiga-sport/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERTIGA-SPORT-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Ertiga Sport</a></li>
+<li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-jimny/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/JIMNY-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Jimny</a></li>
+<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-baleno/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/BALENO-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Baleno</a></li>
+<li id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-sx4-s-cross/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/SX4-S-CROSS-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki SX4 S-Cross</a></li>
+<li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-karimun-wagon-r/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/KARIMUN-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Karimun Wagon R</a></li>
+<li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-carry-pick-up/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/CARRY-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Carry Pick Up</a></li>
+<li id="menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-apv/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/APV-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki APV</a></li>
+</ul>
+</li>
+<li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-383 current_page_item"><a href="https://www.suzukijabodetabek.id/simulasi-kredit/">Simulasi Kredit</a></li>
+<li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.suzukijabodetabek.id/kontak/">Kontak</a></li>
+<li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.suzukijabodetabek.id/berita/">Berita</a></li>
+<li id="menu-item-420" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.suzukijabodetabek.id/gallery-delivery/">Gallery Delivery</a></li>
+</ul></div>	        </div>			<!-- MOBILE NAV -->
+		
+		    <!-- HEADER IDEALER -->
+		    <div class="inav">
+			
+			    <!-- HEADER TOP -->
+				
+                <div class="topin">
+				    <div class="container clear">
+				    	Info Promo & Harga Terbaru : <b>081298421124</b> 
+						 / Whatsapp : <b>081298421124</b> <i class="fa fa-envelope"></i> ALDISUZUKIMOBIL13@GMAIL.COM			        	<span class="iright">
+			            	<span class="iworks">Dealer Suzuki : 
+	KAM 08.00-17.00 WIB</span> 
+				        	<span class="itimers">
+				            	<i class="fa fa-clock-o"></i> <strong><span id="time"></span>:<span id="minu"></span> <span id="secs"></span></strong>
+				        	</span>
+						</span>
+			    	</div>
+				</div>
+								<!-- HEADER TOP -->
+				
+				<!-- HEADER NAV -->
+                
+			    <div class="dealnav clear">
+			    	<div class="container clear">
+			        	<div class="navinn">
+							
+							<!-- DESKTOP LOGO -->
+			    		    <div class="logo">
+				    		    <div class="logo-img">
+				                	<a href="https://www.suzukijabodetabek.id">
+						    	    	<img id="logo" src="https://www.suzukijabodetabek.id/wp-content/uploads/2021/03/LOGO-HEADER.png" alt="Suzuki Jabodetabek"/>
+							    	</a>
+							    </div>
+		     	            </div>
+							<!-- DESKTOP LOGO -->
+							
+							<!-- SOCIAL LINK -->
+					    	<div class="men normal">
+					        	<div class="toplist">
+					                <div class="nav"><ul id="dd" class="dd"><li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="https://www.suzukijabodetabek.id/">Beranda</a></li>
+<li id="menu-item-288" class="full-image menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Produk</a>
+<ul class="sub-menu">
+<li id="menu-item-390" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-ignis/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/IGNIS-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Ignis</a></li>
+<li id="menu-item-391" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-xl7/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/XL7-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki XL7</a></li>
+<li id="menu-item-392" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-ertiga/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERITGA-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Ertiga</a></li>
+<li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-ertiga-sport/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERTIGA-SPORT-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Ertiga Sport</a></li>
+<li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-jimny/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/JIMNY-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Jimny</a></li>
+<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-baleno/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/BALENO-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Baleno</a></li>
+<li id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-sx4-s-cross/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/SX4-S-CROSS-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki SX4 S-Cross</a></li>
+<li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-karimun-wagon-r/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/KARIMUN-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Karimun Wagon R</a></li>
+<li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-carry-pick-up/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/CARRY-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki Carry Pick Up</a></li>
+<li id="menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-model"><a href="https://www.suzukijabodetabek.id/model/suzuki-apv/"><img width="200" height="150" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/APV-200x150.jpg" class="nav_thumb my_thumb wp-post-image" alt="" loading="lazy" title="" />Suzuki APV</a></li>
+</ul>
+</li>
+<li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-383 current_page_item"><a href="https://www.suzukijabodetabek.id/simulasi-kredit/">Simulasi Kredit</a></li>
+<li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.suzukijabodetabek.id/kontak/">Kontak</a></li>
+<li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.suzukijabodetabek.id/berita/">Berita</a></li>
+<li id="menu-item-420" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.suzukijabodetabek.id/gallery-delivery/">Gallery Delivery</a></li>
+</ul></div>				            	</div>
+					    		<div class="ca diamond">
+								
+								    <div class="dv info">
+									    <i class="fa fa-info"></i>
+									</div>
+								
+														            									    	<div class="dv sss">
+					                    	<a href="https://www.facebook.com/aldy.irwinsyah" target="_blank">
+					            	            <i class="fa fa-facebook"></i>
+					                    	</a>
+										</div>
+				        	    								    								        	<div class="dv sss">
+									    	<a href="https://www.instagram.com/SUZUKIMOBIL__JAKARTA/" target="_blank">
+					            	            <i class="fa fa-instagram"></i>
+					                    	</a>
+										</div>
+							    																			
+									<div class="dv fmenu">
+									    	<i class="fa fa-navicon"></i>
+										</div>
+									
+					    		</div>
+					    	</div>
+							<!-- SOCIAL LINK -->
+							
+		    	    	</div>
+					</div>
+				</div>			    <!-- HEADER NAV -->
+			
+			</div>
+			<!-- HEADER IDEALER -->
+			
+			<!-- HOME SLIDER -->
+						<!-- HOME SLIDER -->
+
+			<!-- BREADCRUMB -->
+						                <div class="befbread">
+			                    <div class="breadlay">
+				            	</div>
+								<div class="container clear">
+                                    <div class="breadcrumbs"><span typeof="v:Breadcrumb"><a href="https://www.suzukijabodetabek.id/" rel="v:url" property="v:title"><i class="fa fa-home"></i> Home</a></span> <i class="fa fa-angle-right"></i> <span class="current">Simulasi Kredit</span></div><!-- .breadcrumbs -->								</div>
+			                </div>
+                        			<!-- BREADCRUMB -->
+				
+			<!-- Container -->
+			<div class="clear">
+
+<section class="dealco clear">
+    <div class="container clear">
+	
+    	<div class="coleft">
+		    <div class="coleftinn">
+        		        					
+				<div class="blog-content clear">
+				
+			    	<!-- Left Side -->
+			        <div class="sideal">
+				        <div class="dealimg">
+					        			        	</div>
+			    	</div>
+					<!-- Left Side -->
+
+			    	<!-- Title Heading -->
+					<h2 class="sptitle">Simulasi Kredit</h2>
+					<!-- Title Heading -->
+					
+					<!-- Content Post -->
+				    <div role="form" class="wpcf7" id="wpcf7-f375-p383-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/simulasi-kredit/#wpcf7-f375-p383-o1" method="post" class="wpcf7-form init cf7skins cf7s-vanilla" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="375" />
+<input type="hidden" name="_wpcf7_version" value="5.4" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f375-p383-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="383" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<fieldset>
+<legend>Registrasi</legend>
+<ol>
+<li><label for='cf7s-name'> Nama </label><span class="wpcf7-form-control-wrap cf7s-name"><input type="text" name="cf7s-name" value="" size="40" class="wpcf7-form-control wpcf7-text" id="cf7s-name" aria-invalid="false" /></span> </li>
+<li><label for='cf7s-phone'> Nomor Telepon </label><span class="wpcf7-form-control-wrap cf7s-phone"><input type="tel" name="cf7s-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" id="cf7s-phone" aria-invalid="false" /></span> </li>
+<li><label for='cf7s-email'> Email <em class="cf7s-reqd">*</em> </label><span class="wpcf7-form-control-wrap cf7s-email"><input type="email" name="cf7s-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" id="cf7s-email" aria-required="true" aria-invalid="false" /></span> </li>
+<li> Alamat <span class="wpcf7-form-control-wrap cf7s-addres"><input type="text" name="cf7s-addres" value="" size="40" class="wpcf7-form-control wpcf7-text" id="cf7s-addres" aria-invalid="false" /></span>
+<li><label for='cf7s-radio1'> Tenor </label><span class="wpcf7-form-control-wrap cf7s-radio1"><span class="wpcf7-form-control wpcf7-radio" id="cf7s-radio1"><span class="wpcf7-list-item first"><input type="radio" name="cf7s-radio1" value="1 Tahun" checked="checked" /><span class="wpcf7-list-item-label">1 Tahun</span></span><span class="wpcf7-list-item"><input type="radio" name="cf7s-radio1" value="2 Tahun" /><span class="wpcf7-list-item-label">2 Tahun</span></span><span class="wpcf7-list-item"><input type="radio" name="cf7s-radio1" value="3 Tahun" /><span class="wpcf7-list-item-label">3 Tahun</span></span><span class="wpcf7-list-item"><input type="radio" name="cf7s-radio1" value="4 Tahun" /><span class="wpcf7-list-item-label">4 Tahun</span></span><span class="wpcf7-list-item last"><input type="radio" name="cf7s-radio1" value="5 Tahun" /><span class="wpcf7-list-item-label">5 Tahun</span></span></span></span> </li>
+<li><label for='cf7s-select1'> Mobil </label><span class="wpcf7-form-control-wrap cf7s-select1"><select name="cf7s-select1" class="wpcf7-form-control wpcf7-select" id="cf7s-select1" aria-invalid="false"><option value="All New Ertiga">All New Ertiga</option><option value="All New Ertiga Sport">All New Ertiga Sport</option><option value="Wagon R">Wagon R</option><option value="Ignis">Ignis</option><option value="S-Cross">S-Cross</option><option value="Baleno">Baleno</option><option value="Carry PU">Carry PU</option><option value="APV">APV</option><option value="Jimny">Jimny</option></select></span> </li>
+<li><label for='cf7s-comments'> Jumlah DP Request ( Contoh : 20Jt ) </label><span class="wpcf7-form-control-wrap cf7s-comments"><textarea name="cf7s-comments" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="cf7s-comments" aria-invalid="false"></textarea></span> </li>
+</ol>
+<p>	<input type="submit" value="Kirim" class="wpcf7-form-control wpcf7-submit" />
+</p></fieldset></p>
+<div class="wpcf7-response-output" aria-hidden="true"></div></form></div>
+					<!-- Content Post -->	
+
+		        	<!-- Comment Post -->	
+										
+		    	</div>
+				 
+	        	        	        	</div>
+    	</div>
+		
+    	<div class="coright">
+    		
+	    	
+<div id="sidebar">
+	<div id="search-2" class="widget_search widget clear"><div class="search-post">
+	<form method="get" id="searchform" action="https://www.suzukijabodetabek.id">
+		<fieldset>
+		    <input class="spo" name="s" type="text" placeholder="cari berita..." value=""/>
+			<input type="hidden" name="post_type" value="post" />
+			<button type="submit" style="display:none"><i class="fa fa-search"></i></button>
+		</fieldset>
+	</form>
+</div>
+</div>
+		<div id="recent-posts-2" class="widget_recent_entries widget clear">
+		<h3>Recent Posts</h3>
+		<ul>
+											<li>
+					<a href="https://www.suzukijabodetabek.id/50-tahun-suzuki-di-indonesia-ini-pencapaian-yang-telah-diraih/">50 Tahun Suzuki di Indonesia, Ini Pencapaian yang Telah Diraih</a>
+									</li>
+											<li>
+					<a href="https://www.suzukijabodetabek.id/jadi-andalan-suzuki-carry-pikap-banyak-terserap-industri-umkm/">Jadi Andalan Suzuki, Carry Pikap Banyak Terserap Industri UMKM</a>
+									</li>
+											<li>
+					<a href="https://www.suzukijabodetabek.id/meski-masih-pandemi-penjualan-suzuki-mulai-stabil-bulan-lalu/">Meski Masih Pandemi, Penjualan Suzuki Mulai Stabil Bulan Lalu</a>
+									</li>
+					</ul>
+
+		</div><div id="slidemod-2" class="widget_slidemod widget clear"><h3>Slide Model</h3><script>
+            jQuery(document).ready(function($) {
+              var owl = $('.widget-slidemod-2-title');
+              owl.on('initialize.owl.carousel initialized.owl.carousel ' +
+                'initialize.owl.carousel initialize.owl.carousel ' +
+                'resize.owl.carousel resized.owl.carousel ' +
+                'refresh.owl.carousel refreshed.owl.carousel ' +
+                'update.owl.carousel updated.owl.carousel ' +
+                'drag.owl.carousel dragged.owl.carousel ' +
+                'translate.owl.carousel translated.owl.carousel ' +
+                'to.owl.carousel changed.owl.carousel',
+                function(e) {
+                  $('.' + e.type)
+                    .removeClass('secondary')
+                    .addClass('success');
+                  window.setTimeout(function() {
+                    $('.' + e.type)
+                      .removeClass('success')
+                      .addClass('secondary');
+                  }, 500);
+                });
+              owl.owlCarousel({
+                loop: true,
+                nav: true,
+				dots: false,
+				navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+                lazyLoad: true,
+				autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                margin: 10,
+                video: true,
+                responsive:{
+                    0:{ 
+					    items:2
+                    },
+                    520:{
+                        items:2
+                    },
+					640:{
+                        items:3
+                    },
+                    980:{
+                        items:1
+                    },
+                    1170:{
+                        items:1
+                    }
+                }
+              });
+            });
+        </script>
+	    <div class="widslide clear">
+        	<div class="row">
+    	    	<div class="large-12 columns">
+	            	<div class="widget-slidemod-2-title owl-carousel owl-theme">
+	                	                        <div class="item">
+						    <div class="afitem">
+						        	                            <a href="https://www.suzukijabodetabek.id/model/suzuki-apv/">
+		                            <img width="600" height="400" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/APV-600x400.jpg" class="attachment-landscape size-landscape wp-post-image" alt="" loading="lazy" srcset="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/APV-600x400.jpg 600w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/APV-300x200.jpg 300w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/APV-768x512.jpg 768w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/APV.jpg 900w" sizes="(max-width: 600px) 100vw, 600px" />	                            </a>
+						    	<div class="bsslide">
+							        <div class="bstitle">
+						             	<i class="fa fa-car"></i>								    	<a href="https://www.suzukijabodetabek.id/model/suzuki-apv/">
+								            Suzuki APV								     	</a>
+							    	</div>
+						     	</div>
+                            </div>
+					    	<div class="bsprice">
+						        								    					                    						                    Mulai : <strong>163.500.000</strong>
+					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                     <span class="bpstype">7 Type</span>					    	</div>
+						</div>
+				    	                        <div class="item">
+						    <div class="afitem">
+						        	                            <a href="https://www.suzukijabodetabek.id/model/suzuki-ertiga-sport/">
+		                            <img width="600" height="400" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERTIGA-SPORT-600x400.jpg" class="attachment-landscape size-landscape wp-post-image" alt="" loading="lazy" srcset="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERTIGA-SPORT-600x400.jpg 600w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERTIGA-SPORT-300x200.jpg 300w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERTIGA-SPORT-768x512.jpg 768w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERTIGA-SPORT.jpg 900w" sizes="(max-width: 600px) 100vw, 600px" />	                            </a>
+						    	<div class="bsslide">
+							        <div class="bstitle">
+						             	<i class="fa fa-car"></i>								    	<a href="https://www.suzukijabodetabek.id/model/suzuki-ertiga-sport/">
+								            Suzuki Ertiga Sport								     	</a>
+							    	</div>
+						     	</div>
+                            </div>
+					    	<div class="bsprice">
+						        								    					                    						                    Mulai : <strong>255.202.750</strong>
+					                    				                    					                    				                     <span class="bpstype">2 Type</span>					    	</div>
+						</div>
+				    	                        <div class="item">
+						    <div class="afitem">
+						        	                            <a href="https://www.suzukijabodetabek.id/model/suzuki-karimun-wagon-r/">
+		                            <img width="600" height="400" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/KARIMUN-600x400.jpg" class="attachment-landscape size-landscape wp-post-image" alt="" loading="lazy" srcset="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/KARIMUN-600x400.jpg 600w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/KARIMUN-300x200.jpg 300w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/KARIMUN-768x512.jpg 768w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/KARIMUN.jpg 900w" sizes="(max-width: 600px) 100vw, 600px" />	                            </a>
+						    	<div class="bsslide">
+							        <div class="bstitle">
+						             	<i class="fa fa-car"></i>								    	<a href="https://www.suzukijabodetabek.id/model/suzuki-karimun-wagon-r/">
+								            Suzuki Karimun Wagon R								     	</a>
+							    	</div>
+						     	</div>
+                            </div>
+					    	<div class="bsprice">
+						        								    					                    						                    Mulai : <strong>122.000.000</strong>
+					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                     <span class="bpstype">6 Type</span>					    	</div>
+						</div>
+				    	                        <div class="item">
+						    <div class="afitem">
+						        	                            <a href="https://www.suzukijabodetabek.id/model/suzuki-sx4-s-cross/">
+		                            <img width="600" height="400" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/SX4-S-CROSS-600x400.jpg" class="attachment-landscape size-landscape wp-post-image" alt="" loading="lazy" srcset="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/SX4-S-CROSS-600x400.jpg 600w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/SX4-S-CROSS-300x200.jpg 300w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/SX4-S-CROSS-768x512.jpg 768w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/SX4-S-CROSS.jpg 900w" sizes="(max-width: 600px) 100vw, 600px" />	                            </a>
+						    	<div class="bsslide">
+							        <div class="bstitle">
+						             	<i class="fa fa-car"></i>								    	<a href="https://www.suzukijabodetabek.id/model/suzuki-sx4-s-cross/">
+								            Suzuki SX4 S-Cross								     	</a>
+							    	</div>
+						     	</div>
+                            </div>
+					    	<div class="bsprice">
+						        								    					                    						                    Mulai : <strong>305.500.000</strong>
+					                    				                    					                    				                     <span class="bpstype">2 Type</span>					    	</div>
+						</div>
+				    	                        <div class="item">
+						    <div class="afitem">
+						        	                            <a href="https://www.suzukijabodetabek.id/model/suzuki-xl7/">
+		                            <img width="600" height="400" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/XL7-600x400.jpg" class="attachment-landscape size-landscape wp-post-image" alt="" loading="lazy" srcset="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/XL7-600x400.jpg 600w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/XL7-300x200.jpg 300w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/XL7-768x512.jpg 768w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/XL7.jpg 900w" sizes="(max-width: 600px) 100vw, 600px" />	                            </a>
+						    	<div class="bsslide">
+							        <div class="bstitle">
+						             	<i class="fa fa-car"></i>								    	<a href="https://www.suzukijabodetabek.id/model/suzuki-xl7/">
+								            Suzuki XL7								     	</a>
+							    	</div>
+						     	</div>
+                            </div>
+					    	<div class="bsprice">
+						        								    					                    						                    Mulai : <strong>236.100.000</strong>
+					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                     <span class="bpstype">6 Type</span>					    	</div>
+						</div>
+				    	                        <div class="item">
+						    <div class="afitem">
+						        	                            <a href="https://www.suzukijabodetabek.id/model/suzuki-ertiga/">
+		                            <img width="600" height="400" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERITGA-600x400.jpg" class="attachment-landscape size-landscape wp-post-image" alt="" loading="lazy" srcset="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERITGA-600x400.jpg 600w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERITGA-300x200.jpg 300w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERITGA-768x512.jpg 768w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/ERITGA.jpg 900w" sizes="(max-width: 600px) 100vw, 600px" />	                            </a>
+						    	<div class="bsslide">
+							        <div class="bstitle">
+						             	<i class="fa fa-car"></i>								    	<a href="https://www.suzukijabodetabek.id/model/suzuki-ertiga/">
+								            Suzuki Ertiga								     	</a>
+							    	</div>
+						     	</div>
+                            </div>
+					    	<div class="bsprice">
+						        								    					                    						                    Mulai : <strong>210.508.500</strong>
+					                    				                    					                    				                    					                    				                    					                    				                    					                    				                     <span class="bpstype">5 Type</span>					    	</div>
+						</div>
+				    	                        <div class="item">
+						    <div class="afitem">
+						        	                            <a href="https://www.suzukijabodetabek.id/model/suzuki-carry-pick-up/">
+		                            <img width="600" height="400" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/CARRY-600x400.jpg" class="attachment-landscape size-landscape wp-post-image" alt="" loading="lazy" srcset="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/CARRY-600x400.jpg 600w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/CARRY-300x200.jpg 300w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/CARRY-768x512.jpg 768w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/CARRY.jpg 900w" sizes="(max-width: 600px) 100vw, 600px" />	                            </a>
+						    	<div class="bsslide">
+							        <div class="bstitle">
+						             	<i class="fa fa-car"></i>								    	<a href="https://www.suzukijabodetabek.id/model/suzuki-carry-pick-up/">
+								            Suzuki Carry Pick Up								     	</a>
+							    	</div>
+						     	</div>
+                            </div>
+					    	<div class="bsprice">
+						        								    					                    						                    Mulai : <strong>155.500.000</strong>
+					                    				                    					                    				                    					                    				                    					                    				                     <span class="bpstype">4 Type</span>					    	</div>
+						</div>
+				    	                        <div class="item">
+						    <div class="afitem">
+						        	                            <a href="https://www.suzukijabodetabek.id/model/suzuki-baleno/">
+		                            <img width="600" height="400" src="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/BALENO-600x400.jpg" class="attachment-landscape size-landscape wp-post-image" alt="" loading="lazy" srcset="https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/BALENO-600x400.jpg 600w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/BALENO-300x200.jpg 300w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/BALENO-768x512.jpg 768w, https://www.suzukijabodetabek.id/wp-content/uploads/2020/07/BALENO.jpg 900w" sizes="(max-width: 600px) 100vw, 600px" />	                            </a>
+						    	<div class="bsslide">
+							        <div class="bstitle">
+						             	<i class="fa fa-car"></i>								    	<a href="https://www.suzukijabodetabek.id/model/suzuki-baleno/">
+								            Suzuki Baleno								     	</a>
+							    	</div>
+						     	</div>
+                            </div>
+					    	<div class="bsprice">
+						        								    					                    						                    Mulai : <strong>238.500.000</strong>
+					                    				                    					                    				                     <span class="bpstype">2 Type</span>					    	</div>
+						</div>
+				    						
+			    	</div>
+		    	</div>
+	    	</div>
+     	</div>
+		
+		</div>	
+	</div>
+		
+		</div>
+	</div>
+</section>
+	
+
+	</div>
+	<!-- Container -->
+	<div class="parallax top-foot on">
+	    <div class="footlay">
+        </div>
+	    <div class="container clear">
+		    <div class="tf-inn clear">
+				<div class="foconn">
+					<div class="fosos">
+					    <div class="stcon">
+						    Stay Connected
+						</div>
+						        					        						            	<a target="_blank" href="https://www.facebook.com/aldy.irwinsyah" target="_blank">
+					            	    <i class="fa fa-facebook"></i>
+					            	</a>
+				        										
+															    	<a target="_blank" href="https://www.instagram.com/SUZUKIMOBIL__JAKARTA/" target="_blank">
+					            	    <i class="fa fa-instagram"></i>
+					            	</a>
+																						    		<a target="_blank" href="mailto:ALDISUZUKIMOBIL13@GMAIL.COM" target="_blank">
+						                <i class="fa fa-envelope"></i>
+					            	</a>
+																					</div>
+				    <div class="fosearch"><div class="search-post">
+	<form method="get" id="searchform" action="https://www.suzukijabodetabek.id/">
+		<fieldset>
+		    
+			<div class="divin">
+		    	<div class="insel">
+				    <input class="spo" name="s" type="text" placeholder="Cari sesuatu..." value="" />
+				</div>
+			</div>
+			<div class="divsel">
+		    	<div class="insel">
+		    		<select name="post_type">
+						<option value="model">Mobil</option>
+						<option value="post">Berita</option>
+					</select>
+				</div>
+			</div>
+			<div class="divbut">
+		    	<div class="insel">
+		        	<button type="submit"><i class="fa fa-search"></i></button>
+		    	</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="dealfoot clear">
+	    <div class="container clear">
+		     <div class="pack-one">
+			
+			    <div class="foot-bar fleft">
+		    		<div class="foot-inn">
+			    							</div>
+				</div>
+				
+				<div class="foot-bar fcenter">
+		    		<div class="foot-inn">
+			    							</div>
+				</div>
+				
+				<div class="foot-bar fright">
+				    <div class="foot-inn">
+			    							</div>
+				</div>
+				
+				<div class="foot-bar btt">
+				    <div class="foot-inn">
+			    							</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<div class="footer clear">
+	    <div class="container clear">
+								    <div class="copyright">
+				        Copyright © 2021 <a href="https://www.suzukijabodetabek.id/">Suzuki Jabodetabek</a>					</div>
+						</div>
+	</div>
+	
+	
+        <!-- BEGIN LOGO AREA -->
+                <!-- END LOGO AREA -->
+
+		<!-- BEGIN MENU BAR -->
+		<div class="touchy-wrapper">
+
+            <!-- BEGIN BACK BUTTON -->
+            
+                                                                    
+            			<!-- END BACK BUTTON -->
+			
+			<!-- BEGIN CALL BUTTON -->
+            
+                                        <a href="tel:+6281298421124" class="touchy-call-button">
+        <span class="touchy-call-text-label-offset">
+                            <i class="fa fa-phone"></i>
+                    </span>
+    </a>
+                                
+            			<!-- END CALL BUTTON -->
+			
+			<!-- BEGIN EMAIL BUTTON -->
+            
+                                        <a href="https://www.suzukijabodetabek.id/simulasi-kredit/" class="touchy-email-button">
+        <span class="touchy-email-text-label-offset">
+                            <i class="fa fa-calculator"></i>
+                    </span>
+    </a>
+                                
+            			<!-- END EMAIL BUTTON -->
+            
+            <!-- BEGIN SEARCH BUTTON -->
+            
+                                        <a href="https://api.whatsapp.com/send?phone=6281298421124&amp;text=Halo%20Aldi,%20mohon%20info%20promo%20untuk%20mobil%20suzuki" class="touchy-search-button">
+        <span class="touchy-search-text-label-offset">
+                            <i class="fa fa-whatsapp"></i>
+                    </span>
+    </a>
+                                
+            			<!-- END SEARCH BUTTON -->
+
+			<!-- BEGIN MENU BUTTON -->
+                                        			<!-- END MENU BUTTON -->
+
+		</div>
+		<!-- END MENU BAR -->
+		
+		<!-- BEGIN ACCORDION MENU -->
+        <div class="touchy-by-bonfire-wrapper">
+            <div class="touchy-overlay"><div class="touchy-overlay-inner"></div></div>
+            <div class="touchy-by-bonfire smooth-scroll">
+                <!-- BEGIN WIDGETS -->
+                	
+                <!-- END WIDGETS -->
+                                                <!-- BEGIN WIDGETS -->
+                	
+                <!-- END WIDGETS -->
+            </div>
+        </div>
+		<!-- END ACCORDION MENU -->
+        
+        <!-- BEGIN SEARCH FIELD -->
+                <div class="touchy-search-wrapper">
+            <form method="get" id="searchform" action="https://www.suzukijabodetabek.id/">
+                <input type="text" name="s" class="touchy-search-field" placeholder="Enter search term...">
+                <div class="touchy-clear-search-wrapper">
+                <div class="touchy-clear-search"></div>                                            <input type="submit" name="submit" class="touchy-search" value="Search" />
+                                    </div>
+            </form>
+        </div>
+                <!-- END SEARCH FIELD -->
+        
+        <!-- BEGIN MENUBAR STICKY (if logo location not hidden) -->
+                <!-- END MENUBAR STICKY (if logo location not hidden) -->
+        
+        <!-- BEGIN FADE OUT LOGO ON SCROLL -->
+        <script>
+        jQuery(window).scroll(function(){
+            jQuery(".touchy-logo, .touchy-logo-image").css("opacity", 1 - jQuery(window).scrollTop() / 50);
+        });
+        </script>
+        <!-- END FADE OUT LOGO ON SCROLL -->
+        
+        <!-- BEGIN MENUBAR SHADOW SIZE INCREASE ON SCROLL (unless absolute or bottom positioning selected) -->
+                <!-- END MENUBAR SHADOW SIZE INCREASE ON SCROLL (unless absolute or bottom positioning selected) -->
+        
+        <!-- BEGIN RETINA IMAGE SUPPORT (for logo image only) -->
+                <!-- END RETINA LOGO IMAGE SUPPORT (for logo image only) -->
+
+	    
+                    <style>
+            /* add padding to ensure that whatever content may be at the top of the site doesn't get hidden behind the menu */
+                        html { padding-bottom:50px; }
+            </style>
+                
+        
+        <style>
+        /* hide touchy between resolutions */
+		@media ( min-width:px) and (max-width:px) {
+            html {
+                            margin-top:0 !important;
+                        }
+            							/* add padding to ensure that whatever content may be at the top of the site doesn't get hidden behind the menu */
+				html { padding-bottom:0px !important; }
+					}
+        </style>
+    
+    <link rel='stylesheet' id='cf7s-framework-normalize-css'  href='https://www.suzukijabodetabek.id/wp-content/plugins/contact-form-7-skins/css/framework/cf7s-normalize.css?ver=2.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cf7s-framework-default-css'  href='https://www.suzukijabodetabek.id/wp-content/plugins/contact-form-7-skins/css/framework/cf7s-default.css?ver=2.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cf7s-vanilla-css'  href='https://www.suzukijabodetabek.id/wp-content/plugins/contact-form-7-skins/skins/styles/vanilla/vanilla.css?ver=2.4.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/dist/url.min.js?ver=d4bdf85a96aa587b52f4b8d58b4457c1' id='wp-url-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/dist/api-fetch.min.js?ver=134e23b5f88ba06a093f9f92520a98df' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://www.suzukijabodetabek.id/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "4abe24b558" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://www.suzukijabodetabek.id/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-content/plugins/touchy-by-bonfire/touchy.js?ver=1' id='bonfire-touchy-js-js'></script>
+<script type='text/javascript' src='https://www.suzukijabodetabek.id/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+        
+		<!-- Back to Top -->
+		<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+	 	<script>
+		  // Scroll Top
+			$(window).scroll(function() {
+				if ($(this).scrollTop() >= 150) {
+					$('#return-to-top').fadeIn(200);
+					$('body').addClass("fade");
+			 	} else {
+					$('#return-to-top').fadeOut(200);
+					$('.open').css("display","block");
+					$('body').removeClass("fade");
+			 	}
+			});
+			$('#return-to-top').click(function() {
+				$('body,html').animate({
+					scrollTop : 0
+			 	}, 500);
+			});
+			
+		</script>
+		
+
+<script type="text/javascript" src="https://www.suzukijabodetabek.id/wp-content/themes/dealer/js/owl.carousel.js"></script>
+		
+	</body>
+</html>

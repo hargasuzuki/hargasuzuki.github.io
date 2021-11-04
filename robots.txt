@@ -1,7 +1,5 @@
 User-agent: *
-Allow: /wp-admin/admin-ajax.php
 Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
 
-Sitemap: https://suzukibsd.com/sitemap.xml
-Sitemap: https://suzukibsd.com/sitemap.rss
-
+Sitemap: https://www.suzukijabodetabek.id/wp-sitemap.xml
